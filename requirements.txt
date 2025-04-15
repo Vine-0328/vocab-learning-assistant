@@ -1,0 +1,2 @@
+tk
+reportlab>=4.0.0
