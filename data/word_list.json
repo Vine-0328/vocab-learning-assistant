@@ -1,0 +1,24 @@
+{
+    "TOEFL": [
+        {
+            "word": "ameliorate",
+            "definition": "改善，改进",
+            "example": "The new policies are designed to ameliorate the living conditions of the poor.",
+            "difficulty": "medium"
+        },
+        {
+            "word": "ubiquitous",
+            "definition": "无所不在的，普遍的",
+            "example": "Mobile phones have become ubiquitous in modern society.",
+            "difficulty": "medium"
+        }
+    ],
+    "SAT": [
+        {
+            "word": "ephemeral",
+            "definition": "短暂的，瞬息的",
+            "example": "Fame in the entertainment industry can be ephemeral.",
+            "difficulty": "hard"
+        }
+    ]
+}
