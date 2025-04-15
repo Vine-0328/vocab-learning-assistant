@@ -15,7 +15,7 @@
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/你的用户名/vocab-learning-assistant.git
+git clone https://github.com/Vine-0328/vocab-learning-assistant.git
 cd vocab-learning-assistant
 ```
 
