@@ -45,13 +45,13 @@ python vocab_learner.py
 
 ## 项目结构
 vocab-learning-assistant/
-│
-├── vocab_learner.py # 主程序
-├── requirements.txt # 项目依赖
-├── README.md # 项目文档
-├── LICENSE # 开源协议
-└── data/ # 数据文件夹
-└── word_list.json # 词汇数据
+- vocab_learner.py # 主程序
+- requirements.txt # 项目依赖
+- README.md # 项目文档
+- LICENSE # 开源协议
+- data/ # 数据文件夹
+- word_list.json # 词汇数据
+- 6000 words examples.json #6000词汇数据
 ## 数据格式
 
 词汇数据存储在SQLite数据库中，包含以下字段：
