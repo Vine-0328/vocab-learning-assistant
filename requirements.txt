@@ -1,2 +1,2 @@
-tk
-reportlab>=4.0.0
+# Runtime uses only the Python standard library (including tkinter and sqlite3).
+# On Debian/Ubuntu, install python3-tk with your OS package manager.

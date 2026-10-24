@@ -1,0 +1,602 @@
+[
+  {
+    "word": "ameliorate",
+    "definition": "v. 改善；改进",
+    "example": "The new policy aims to ameliorate living conditions.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "ephemeral",
+    "definition": "adj. 短暂的；转瞬即逝的",
+    "example": "The beauty of the sunset was ephemeral.",
+    "deck": "SAT"
+  },
+  {
+    "word": "ubiquitous",
+    "definition": "adj. 无处不在的；普遍存在的",
+    "example": "Smartphones have become ubiquitous in daily life.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "abate",
+    "definition": "v. 减弱；缓和",
+    "example": "The storm began to abate after midnight.",
+    "deck": "SAT"
+  },
+  {
+    "word": "aberrant",
+    "definition": "adj. 偏离常规的；异常的",
+    "example": "The scientist investigated the aberrant results.",
+    "deck": "SAT"
+  },
+  {
+    "word": "abhor",
+    "definition": "v. 憎恶；厌恶",
+    "example": "She abhors cruelty to animals.",
+    "deck": "SAT"
+  },
+  {
+    "word": "abundant",
+    "definition": "adj. 丰富的；充裕的",
+    "example": "The region has abundant natural resources.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "accommodate",
+    "definition": "v. 容纳；适应；为……提供住宿",
+    "example": "The library can accommodate two hundred readers.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "accumulate",
+    "definition": "v. 积累；堆积",
+    "example": "Dust can accumulate on unused equipment.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "accurate",
+    "definition": "adj. 准确的；精确的",
+    "example": "Accurate measurements are essential to this experiment.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "adapt",
+    "definition": "v. 适应；改编",
+    "example": "Desert plants adapt to extremely dry conditions.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "adequate",
+    "definition": "adj. 足够的；适当的",
+    "example": "The shelter provided adequate protection from the rain.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "advocate",
+    "definition": "v. 提倡；拥护；n. 倡导者",
+    "example": "Many researchers advocate greater access to education.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "aesthetic",
+    "definition": "adj. 美学的；审美的",
+    "example": "The building has both practical and aesthetic value.",
+    "deck": "SAT"
+  },
+  {
+    "word": "alleviate",
+    "definition": "v. 减轻；缓解",
+    "example": "A short rest may alleviate fatigue.",
+    "deck": "SAT"
+  },
+  {
+    "word": "ambiguous",
+    "definition": "adj. 模棱两可的；有歧义的",
+    "example": "The ambiguous instructions confused several students.",
+    "deck": "SAT"
+  },
+  {
+    "word": "ambivalent",
+    "definition": "adj. 心情矛盾的；态度不确定的",
+    "example": "He felt ambivalent about moving to another city.",
+    "deck": "SAT"
+  },
+  {
+    "word": "analyze",
+    "definition": "v. 分析；研究",
+    "example": "The team will analyze the samples tomorrow.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "anomaly",
+    "definition": "n. 异常现象；反常事物",
+    "example": "The unexpected temperature rise was an anomaly.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "anticipate",
+    "definition": "v. 预期；预料",
+    "example": "We anticipate a gradual increase in demand.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "arbitrary",
+    "definition": "adj. 任意的；武断的",
+    "example": "The selection should follow clear rather than arbitrary rules.",
+    "deck": "SAT"
+  },
+  {
+    "word": "articulate",
+    "definition": "v. 清楚地表达；adj. 善于表达的",
+    "example": "She can articulate complex ideas in simple language.",
+    "deck": "SAT"
+  },
+  {
+    "word": "assess",
+    "definition": "v. 评估；评价",
+    "example": "The study will assess the impact of the new road.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "attribute",
+    "definition": "v. 把……归因于；n. 特征",
+    "example": "Scientists attribute the change to several factors.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "austere",
+    "definition": "adj. 简朴的；严厉的",
+    "example": "The room was austere, with only a desk and a chair.",
+    "deck": "SAT"
+  },
+  {
+    "word": "authentic",
+    "definition": "adj. 真实的；可信的",
+    "example": "The museum confirmed that the letter was authentic.",
+    "deck": "SAT"
+  },
+  {
+    "word": "benevolent",
+    "definition": "adj. 仁慈的；乐善好施的",
+    "example": "A benevolent donor paid for the new playground.",
+    "deck": "SAT"
+  },
+  {
+    "word": "bolster",
+    "definition": "v. 支持；加强",
+    "example": "The new evidence helped bolster her argument.",
+    "deck": "SAT"
+  },
+  {
+    "word": "candid",
+    "definition": "adj. 坦率的；直言不讳的",
+    "example": "We had a candid discussion about the project's problems.",
+    "deck": "SAT"
+  },
+  {
+    "word": "coherent",
+    "definition": "adj. 连贯的；条理清楚的",
+    "example": "The essay presents a coherent explanation of the theory.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "coincide",
+    "definition": "v. 同时发生；一致",
+    "example": "The festival will coincide with the school holiday.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "compelling",
+    "definition": "adj. 有说服力的；引人入胜的",
+    "example": "The author offers compelling evidence for her claim.",
+    "deck": "SAT"
+  },
+  {
+    "word": "comprehensive",
+    "definition": "adj. 全面的；综合的",
+    "example": "The report provides a comprehensive review of the data.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "concede",
+    "definition": "v. 承认；让步",
+    "example": "He conceded that the earlier estimate was too low.",
+    "deck": "SAT"
+  },
+  {
+    "word": "concise",
+    "definition": "adj. 简明的；简洁的",
+    "example": "Please write a concise summary of the findings.",
+    "deck": "SAT"
+  },
+  {
+    "word": "concurrent",
+    "definition": "adj. 同时发生的",
+    "example": "The study examined two concurrent changes in the economy.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "consequence",
+    "definition": "n. 结果；后果",
+    "example": "Habitat loss is one consequence of rapid development.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "conserve",
+    "definition": "v. 保护；节约",
+    "example": "The town introduced measures to conserve water.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "constitute",
+    "definition": "v. 构成；组成",
+    "example": "Small businesses constitute a large part of the local economy.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "constrain",
+    "definition": "v. 限制；约束",
+    "example": "A limited budget may constrain the scope of the study.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "contemplate",
+    "definition": "v. 仔细考虑；沉思",
+    "example": "She paused to contemplate the possible outcomes.",
+    "deck": "SAT"
+  },
+  {
+    "word": "contradict",
+    "definition": "v. 反驳；与……矛盾",
+    "example": "The latest observations contradict the original hypothesis.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "conventional",
+    "definition": "adj. 传统的；常规的",
+    "example": "The team compared the new method with conventional techniques.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "corroborate",
+    "definition": "v. 证实；支持",
+    "example": "Independent records corroborate the witness's account.",
+    "deck": "SAT"
+  },
+  {
+    "word": "credible",
+    "definition": "adj. 可信的；可靠的",
+    "example": "A strong argument needs credible sources.",
+    "deck": "SAT"
+  },
+  {
+    "word": "crucial",
+    "definition": "adj. 至关重要的",
+    "example": "Timing is crucial to the success of the experiment.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "deduce",
+    "definition": "v. 推断；演绎",
+    "example": "We can deduce the animal's diet from its teeth.",
+    "deck": "SAT"
+  },
+  {
+    "word": "deficient",
+    "definition": "adj. 不足的；缺乏的",
+    "example": "The soil is deficient in essential nutrients.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "delineate",
+    "definition": "v. 描述；勾勒",
+    "example": "The first chapter delineates the scope of the research.",
+    "deck": "SAT"
+  },
+  {
+    "word": "demonstrate",
+    "definition": "v. 证明；演示",
+    "example": "The results demonstrate the value of careful planning.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "denote",
+    "definition": "v. 表示；指示",
+    "example": "The blue symbols denote areas of deep water.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "derive",
+    "definition": "v. 获得；源于",
+    "example": "Many English words derive from Latin.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "deteriorate",
+    "definition": "v. 恶化；变坏",
+    "example": "Without repairs, the condition of the bridge will deteriorate.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "diligent",
+    "definition": "adj. 勤奋的；认真刻苦的",
+    "example": "The diligent student checked every calculation.",
+    "deck": "SAT"
+  },
+  {
+    "word": "diminish",
+    "definition": "v. 减少；减弱",
+    "example": "The noise began to diminish as the train moved away.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "discrepancy",
+    "definition": "n. 差异；不一致",
+    "example": "There is a discrepancy between the two sets of figures.",
+    "deck": "SAT"
+  },
+  {
+    "word": "disparage",
+    "definition": "v. 贬低；轻视",
+    "example": "A fair reviewer should not disparage unfamiliar ideas.",
+    "deck": "SAT"
+  },
+  {
+    "word": "distinct",
+    "definition": "adj. 不同的；清楚的",
+    "example": "The survey identified three distinct patterns.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "diverse",
+    "definition": "adj. 多样的；不同的",
+    "example": "The island supports a diverse range of species.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "elaborate",
+    "definition": "adj. 精心制作的；v. 详细阐述",
+    "example": "Could you elaborate on the reasons for your decision?",
+    "deck": "SAT"
+  },
+  {
+    "word": "elicit",
+    "definition": "v. 引出；引起",
+    "example": "The interview questions were designed to elicit detailed responses.",
+    "deck": "SAT"
+  },
+  {
+    "word": "empirical",
+    "definition": "adj. 以观察或实验为依据的",
+    "example": "The hypothesis must be tested against empirical evidence.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "endure",
+    "definition": "v. 忍受；持续",
+    "example": "These trees can endure long periods of drought.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "enhance",
+    "definition": "v. 提高；增强",
+    "example": "Regular feedback can enhance the learning process.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "equitable",
+    "definition": "adj. 公平的；公正的",
+    "example": "The committee sought an equitable distribution of resources.",
+    "deck": "SAT"
+  },
+  {
+    "word": "essential",
+    "definition": "adj. 必不可少的；本质的",
+    "example": "Water is essential for all known forms of life.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "evaluate",
+    "definition": "v. 评估；评价",
+    "example": "Researchers will evaluate the effectiveness of the treatment.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "evident",
+    "definition": "adj. 明显的；清楚的",
+    "example": "The benefits became evident after several weeks.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "exacerbate",
+    "definition": "v. 使恶化；加剧",
+    "example": "A lack of sleep can exacerbate existing stress.",
+    "deck": "SAT"
+  },
+  {
+    "word": "explicit",
+    "definition": "adj. 明确的；清楚表达的",
+    "example": "The teacher gave explicit instructions for the assignment.",
+    "deck": "SAT"
+  },
+  {
+    "word": "facilitate",
+    "definition": "v. 促进；使便利",
+    "example": "Clear diagrams facilitate understanding.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "feasible",
+    "definition": "adj. 可行的；行得通的",
+    "example": "The team must decide whether the plan is feasible.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "fluctuate",
+    "definition": "v. 波动；起伏",
+    "example": "Temperatures fluctuate widely in the desert.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "formulate",
+    "definition": "v. 制定；构想",
+    "example": "The researchers formulated a new hypothesis.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "frugal",
+    "definition": "adj. 节俭的；节约的",
+    "example": "Her frugal habits helped her save for college.",
+    "deck": "SAT"
+  },
+  {
+    "word": "fundamental",
+    "definition": "adj. 基本的；根本的",
+    "example": "The discovery changed our fundamental understanding of matter.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "hypothesis",
+    "definition": "n. 假设；假说",
+    "example": "The experiment was designed to test a specific hypothesis.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "impartial",
+    "definition": "adj. 公正的；不偏不倚的",
+    "example": "An impartial judge considers all the available evidence.",
+    "deck": "SAT"
+  },
+  {
+    "word": "implicit",
+    "definition": "adj. 含蓄的；未明说的",
+    "example": "There was an implicit agreement to share the work.",
+    "deck": "SAT"
+  },
+  {
+    "word": "incentive",
+    "definition": "n. 激励；诱因",
+    "example": "The grant gives schools an incentive to reduce energy use.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "inevitable",
+    "definition": "adj. 不可避免的",
+    "example": "Some degree of uncertainty is inevitable in forecasting.",
+    "deck": "SAT"
+  },
+  {
+    "word": "infer",
+    "definition": "v. 推断；推知",
+    "example": "Readers can infer the speaker's mood from the dialogue.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "innovative",
+    "definition": "adj. 创新的；新颖的",
+    "example": "The team developed an innovative approach to recycling.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "integral",
+    "definition": "adj. 不可或缺的；构成整体的",
+    "example": "Fieldwork is an integral part of the course.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "interpret",
+    "definition": "v. 解释；理解；口译",
+    "example": "Different researchers may interpret the same data differently.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "intrinsic",
+    "definition": "adj. 固有的；内在的",
+    "example": "She studies music for its intrinsic value.",
+    "deck": "SAT"
+  },
+  {
+    "word": "juxtapose",
+    "definition": "v. 并列；并置以作比较",
+    "example": "The exhibition juxtaposes early sketches with finished paintings.",
+    "deck": "SAT"
+  },
+  {
+    "word": "meticulous",
+    "definition": "adj. 一丝不苟的；细致的",
+    "example": "The restoration required meticulous attention to detail.",
+    "deck": "SAT"
+  },
+  {
+    "word": "mitigate",
+    "definition": "v. 减轻；缓和",
+    "example": "Planting trees can help mitigate the effects of urban heat.",
+    "deck": "SAT"
+  },
+  {
+    "word": "novel",
+    "definition": "adj. 新颖的；n. 长篇小说",
+    "example": "The paper proposes a novel solution to an old problem.",
+    "deck": "SAT"
+  },
+  {
+    "word": "obscure",
+    "definition": "adj. 晦涩的；鲜为人知的；v. 遮掩",
+    "example": "Thick clouds obscure the mountain peak.",
+    "deck": "SAT"
+  },
+  {
+    "word": "persistent",
+    "definition": "adj. 持续的；坚持不懈的",
+    "example": "Persistent effort often matters more than a quick start.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "plausible",
+    "definition": "adj. 貌似合理的；可信的",
+    "example": "The scientist offered a plausible explanation for the anomaly.",
+    "deck": "SAT"
+  },
+  {
+    "word": "pragmatic",
+    "definition": "adj. 务实的；讲求实际的",
+    "example": "They adopted a pragmatic approach to solving the problem.",
+    "deck": "SAT"
+  },
+  {
+    "word": "profound",
+    "definition": "adj. 深刻的；深远的",
+    "example": "The invention had a profound effect on communication.",
+    "deck": "SAT"
+  },
+  {
+    "word": "resilient",
+    "definition": "adj. 能迅速恢复的；有韧性的",
+    "example": "A resilient ecosystem can recover after a disturbance.",
+    "deck": "TOEFL"
+  },
+  {
+    "word": "scrutinize",
+    "definition": "v. 仔细审查；细看",
+    "example": "The editors scrutinized each claim before publication.",
+    "deck": "SAT"
+  },
+  {
+    "word": "substantiate",
+    "definition": "v. 证实；用证据支持",
+    "example": "The author needs more data to substantiate the claim.",
+    "deck": "SAT"
+  },
+  {
+    "word": "tentative",
+    "definition": "adj. 暂定的；试探性的",
+    "example": "We made a tentative plan for the next stage.",
+    "deck": "SAT"
+  },
+  {
+    "word": "validate",
+    "definition": "v. 证实；确认有效",
+    "example": "Further experiments are needed to validate the model.",
+    "deck": "TOEFL"
+  }
+]
