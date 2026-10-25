@@ -18,6 +18,8 @@ python vocab_learner.py
 
 - 今日概览：新词目标、待复习、连续学习、累计词数和近 14 天趋势。
 - 学习空间：每日学习、到期复习、拼写练习、错词巩固、收藏练习。
+- 双语提示：回想时直接查看英文例句；揭示答案后依次显示中文释义、英文释义与例句。
+- 拼写练习：两个按钮独立显示或隐藏中英文释义，可同时显示；正文不重复显示语言标题，每张新卡片重置提示。
 - 间隔复习：忘记、模糊、记得、熟悉四档反馈，显示预计间隔，到期优先。
 - 每日计划：默认每天 70 个新词，每轮 20 张卡，可调整数量和词库。
 - 自动保存：每次评分立即写入 SQLite，同一天重启可继续未完成的一轮。
@@ -26,7 +28,6 @@ python vocab_learner.py
 - 数据交换：JSON / CSV 导入、CSV 导出筛选结果、完整 JSON 备份及恢复。
 - 旧版兼容：导入原版 vocabulary.db，不修改原文件，重复迁移不重复记账。
 - 离线发音：Windows 系统英语语音；macOS 系统 say；Linux 暂未接入发音。
-- 双语翻译：拼写复习和学习新词可以查看中英双译。
 - 小窗口支持：页面、长文本和词汇列表可滚动。
 - 页面和列表采用无箭头圆角细滚动条，悬停加深，无需滚动时隐藏；进度条采用无边框细线。
 
@@ -34,9 +35,9 @@ python vocab_learner.py
 
 1. 在「计划与数据」选择「核心词库」熟悉流程，也可使用全部词汇。
 2. 点击「开始今日学习」。先安排到期复习，再补足新词。
-3. 回想词义，按空格或点击「显示释义」，再阅读释义和例句。
+3. 结合英文例句回想词义，按空格或点击「显示释义」，再阅读中文及英文释义。
 4. 用 1–4 或按钮选择掌握程度。程序保存后进入下一词。
-5. 拼写练习中输入单词，Enter 检查，再次 Enter 进入下一词。
+5. 拼写练习中，点击「显示中文释义」或「显示英文释义」获得提示，可同时显示，再次点击对应按钮可独立隐藏。输入单词后 Enter 检查，再次 Enter 进入下一词。
 6. 退出重开后，今日数量和记录保留，未完成的一轮可继续。
 
 在输入框中空格和数字正常输入。切换模式会重新安排该模式的一轮，未评分的词不计为已学习。
@@ -47,12 +48,16 @@ python vocab_learner.py
 
 | 词库 | 数量 | 内容 |
 | --- | ---: | --- |
-| 核心词库（TOEFL / SAT 分类） | 100 | 中文释义、词性及原创英文例句 |
-| 扩展词库 | 5,914 | 原项目英文释义，不含例句 |
+| 核心词库（TOEFL / SAT 分类） | 100 | 中文释义、英文释义、词性及原创英文例句 |
+| 扩展词库 | 5,914 | 中文及英文释义，每个词均附英文例句 |
 
 原 6000 words examples.json 有 6,000 条，实际只有 word 和 def，没有例句。清理空格及去重后为 5,995 个不同词，其中 81 个与核心词重合，优先保留核心版本；新增 19 个核心词后总数为 6,014。
 
-TOEFL / SAT 是学习分类，不是官方考试必考词表。
+TOEFL / SAT 是学习分类，不是官方考试必考词表。扩展库主要保留原资料的英文释义，补充中文释义参考 [ECDICT](https://github.com/skywind3000/ECDICT)；100 个核心词的英文解释及 27 个未匹配词条的中文解释独立编写。少数原始拼写异常已在补充释义中注明，建议结合词典核对生僻词。
+
+2.2 已为全部扩展词补齐例句，现在共 6,014 条不重复例句：1,400 条本项目教学例句、4,324 条 Tatoeba 例句、290 条 WordNet 3.0 例句。引用例句保留作者、链接、许可及修改标记，详情见 [英文例句来源及许可](data/EXAMPLE-SOURCES.md)。用户可自行编辑。
+
+ECDICT 原许可证保存在 data/ECDICT-LICENSE.txt，数据来源与校验值见 data/dictionary_source.json。中英释义包随程序提供，学习时无需联网，未声称包含牛津授权释义。
 
 ## 复习与统计
 
@@ -77,7 +82,8 @@ TOEFL / SAT 是学习分类，不是官方考试必考词表。
 [
   {
     "word": "resilient",
-    "definition": "adj. 有韧性的；能迅速恢复的",
+    "definition_zh": "adj. 有韧性的；能迅速恢复的",
+    "definition_en": "Able to recover after difficulty, damage, or change.",
     "example": "A resilient ecosystem can recover after a disturbance.",
     "deck": "自定义",
     "note": "与 resilience 一起记忆"
@@ -88,10 +94,12 @@ TOEFL / SAT 是学习分类，不是官方考试必考词表。
 兼容原项目的分组格式以及 def 释义字段。CSV 表头：
 
 ```csv
-word,definition,example,deck,difficulty,note
+word,definition_zh,definition_en,example,example_source,deck,difficulty,note
 ```
 
-单词和释义必填。先校验整份文件，任何条目不合法都取消本次导入。重复词跳过，不覆盖已有释义、笔记或进度，已归档词也视为存在。文件上限 30 MB，最多 100,000 条。
+单词必填，中英文释义至少填写一种。兼容旧版 definition / def 字段：含中文时作为中文释义，否则作为英文释义。新字段优先；CSV 导出另保留 definition 兼容列。先校验整份文件，任何条目不合法都取消本次导入。重复词跳过，不覆盖已有释义、笔记或进度，已归档词也视为存在。文件上限 30 MB，最多 100,000 条。
+
+在「我的词库」双击单词，即可分别编辑中英文释义；搜索会检索两种语言。未填的语言会明确提示缺失。拼写提示会遮住释义中直接出现的目标单词。
 
 CSV 只导出词汇内容，以公式字符开头的字段加单引号，防止表格软件执行公式。保留进度、收藏和评分记录请使用「完整备份」。
 
@@ -113,6 +121,11 @@ python vocab_learner.py --data-dir D:\MyVocabulary
 
 完整备份包含词库、笔记、收藏、评分记录和设置。恢复会替换现有数据，界面会确认；校验通过后先自动把当前数据库副本存入数据目录 backups/，再恢复。损坏备份不会写入当前数据。
 
+旧版迁移在临时副本中升级再合并，已有新版进度优先，原文件保留。历史有效评分可迁移，旧版未持久化的内存进度无法恢复。异常日志位于数据目录 app.log。
+
+2.1 首次打开 2.0 数据库时会先备份，再新增两种语言字段并补齐缺失释义，保留原有词条 ID、学习记录、笔记、收藏、例句及用户释义。支持恢复 2.0 的完整备份；2.1 新备份使用版本 3 并包含双语字段。
+
+2.2 首次打开旧数据库时会先保留副本，再为内置词条填补空白例句。非空例句及其余学习内容保持原样。新备份使用版本 4，包含 example_source 字段；仍可恢复版本 2 和版本 3 的备份，并在恢复旧备份时补齐空白例句。版本 4 备份会原样保留用户主动清空的例句。
 
 ## 开发与验证
 
@@ -135,6 +148,12 @@ vocab/app.py          界面、交互、发音
 vocab/core.py         数据、间隔复习、备份及迁移
 vocab/widgets.py      圆角细滚动条与进度条
 data/core_words.json  100 个完整核心词
+data/bilingual_definitions.json   全部词条的中英释义补充包
+data/ECDICT-LICENSE.txt           补充词典的许可证
+data/word_examples.json           全部 6,014 个词条的例句及出处
+data/example_provenance.json      逐词作者、原始链接、许可及修改标记
+data/EXAMPLE-SOURCES.md           例句来源说明
+data/WORDNET-LICENSE.txt          WordNet 的完整许可
 data/6000 words examples.json   原始扩展数据
 tests/test_core.py    数据与学习规则测试
 tests/test_ui.py      真实 Tk 交互测试
@@ -158,4 +177,4 @@ python -m venv .venv
 
 ## 版本与协议
 
-2.0.0 基于 [Vine-0328/vocab-learning-assistant](https://github.com/Vine-0328/vocab-learning-assistant) 的 main 分支 3e4b49d 扩展，保留原 MIT 协议，见 [LICENSE](LICENSE)。
+2.2.0 基于 [Vine-0328/vocab-learning-assistant](https://github.com/Vine-0328/vocab-learning-assistant) 的 main 分支 3e4b49d 扩展，保留原 MIT 协议，见 [LICENSE](LICENSE)。第三方词典及例句按其各自许可提供。

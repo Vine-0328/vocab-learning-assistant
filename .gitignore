@@ -172,3 +172,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Personal learning data (stored outside the source folder by default)
+*.db
+*.db-wal
+*.db-shm
+backups/
+app.log
+self-check.json
